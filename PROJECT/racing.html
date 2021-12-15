@@ -1,0 +1,389 @@
+<html>
+<head>
+<title>Racing Games</title>
+
+<style>
+*{margin:0;}
+#background-image{
+background-image:url("background.jpg");
+background-size:cover;
+width:100%;
+height:937;
+background-color:rgba(0,0,0,.7);
+background-blend-mode:overlay;
+}
+
+
+#webname{
+color:white;
+font-size:30px;
+margin-left:20px;
+letter-spacing:15px;
+line-height:70px;
+}
+
+#webname:hover{color:darkorange;cursor:pointer}
+
+#homebtn a{text-decoration:none;color:black;}
+#homebtn{
+border:1px solid white;
+width:140px;
+height:25px;
+text-align:center;
+background-color:darkorange;
+line-height:25px;
+box-shadow:white 0px 0px 10px 0px;
+position:relative;top:40px;left:85px;
+}
+
+#homebtn:hover{
+background-color:orange;
+cursor:pointer;
+letter-spacing:5px;
+border-radius:20px;
+}
+
+#homebtn:hover a{color:white;}
+
+#box{
+width:1400px;
+height:825px;
+box-shadow:orange 3px 0px 10px 0px;
+margin-left:350px;
+margin-top:0px;
+background-color:rgba(0,0,0,.6)
+}
+
+#topbar{
+width:100%;
+height:6%;
+background-color:darkorange;
+text-align:center;
+line-height:45px;
+color:white;
+font-size:25px;
+letter-spacing:5px;
+}
+
+#topbar:hover{background-color:orange;cursor:pointer;}
+
+#gamename1{
+color:white;
+margin-top:50px;
+margin-left:1100px;
+font-size:20px;
+}
+#gamename1:hover{
+color:orange;
+cursor:pointer;
+}
+#image1{
+width:210px;
+margin-top:30px;
+margin-left:1070px;
+border-radius:10px;
+}
+#image1:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename2{
+color:white;
+margin-top:-350px;
+margin-left:760px;
+font-size:20px;
+}
+#gamename2:hover{
+color:orange;
+cursor:pointer;
+}
+#image2{
+width:210px;
+height:300px;
+margin-top:30px;
+margin-left:740px;
+border-radius:10px;
+}
+#image2:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename3{
+color:white;
+margin-top:-352px;
+margin-left:400px;
+font-size:20px;
+}
+#gamename3:hover{
+color:orange;
+cursor:pointer;
+}
+#image3{
+width:210px;
+height:300px;
+margin-top:20px;
+margin-left:400px;
+border-radius:10px;
+}
+#image3:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename4{
+color:white;
+margin-top:-342px;
+margin-left:100px;
+font-size:20px;
+}
+#gamename4:hover{
+color:orange;
+cursor:pointer;
+}
+#image4{
+width:210px;
+height:300px;
+margin-top:20px;
+margin-left:80px;
+border-radius:10px;
+}
+#image4:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+#horizontal-line{
+width:1350px;
+height:1px;
+background-color:red;
+margin-top:30px;
+margin-left:23px;
+box-shadow:red 0px 0px 10px 2px;
+}
+
+
+
+#gamename5{
+color:white;
+margin-top:15px;
+margin-left:1100px;
+font-size:20px;
+}
+#gamename5:hover{
+color:orange;
+cursor:pointer;
+}
+#image5{
+width:210px;
+height:263px;
+margin-top:5px;
+margin-left:1070px;
+border-radius:10px;
+}
+#image5:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename6{
+color:white;
+margin-top:-289px;
+margin-left:720px;
+font-size:18px;
+}
+#gamename6:hover{
+color:orange;
+cursor:pointer;
+}
+#image6{
+width:210px;
+height:263px;
+margin-top:5px;
+margin-left:750px;
+border-radius:10px;
+}
+#image6:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename7{
+color:white;
+margin-top:-289px;
+margin-left:490px;
+font-size:20px;
+}
+#gamename7:hover{
+color:orange;
+cursor:pointer;
+}
+#image7{
+width:210px;
+height:263px;
+margin-top:2px;
+margin-left:410px;
+border-radius:10px;
+}
+#image7:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#gamename8{
+color:white;
+margin-top:-289px;
+margin-left:125px;
+font-size:20px;
+}
+#gamename8:hover{
+color:orange;
+cursor:pointer;
+}
+#image8{
+width:210px;
+height:263px;
+margin-top:2px;
+margin-left:80px;
+border-radius:10px;
+}
+#image8:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:orange 0px 0px 15px 1px;
+cursor:pointer;
+border-radius:10px;
+}
+
+
+
+#vertical-line{
+width:755px;
+height:1px;
+background-color:red;
+box-shadow:red 0px 0px 10px 2px;
+transform:rotate(90deg);
+margin-left:640px;
+margin-top:-340px;
+}
+
+#vertical-line2{
+width:755px;
+height:1px;
+background-color:red;
+box-shadow:red 0px 0px 10px 2px;
+transform:rotate(90deg);
+margin-left:300px;
+margin-top:0px;
+}
+
+#vertical-line3{
+width:755px;
+height:1px;
+background-color:red;
+box-shadow:red 0px 0px 10px 2px;
+transform:rotate(90deg);
+margin-left:-20px;
+margin-top:0px;
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div id="background-image">
+<div id="webname">Game Factory</div>
+<div id="homebtn"><h3><a href="index.html">HOME</a></h3></div>
+<div id="box">
+<div id="topbar">RACING-GAMES</div>
+
+<p id="gamename1">NEED FOR SPEED</p>
+<a href="needforspeed.html">
+<img src="nfspeed.jpg"id="image1"></a>
+
+<p id="gamename2">FORZA HORIZON 5</p>
+<a href="forzahorizon.html">
+<img src="forza.jpg"id="image2"></a>
+
+<p id="gamename3">GRAN TURISMO SPORT</p>
+<a href="Granturismo.html">
+<img src="turismo.jpg"id="image3"></a>
+
+<p id="gamename4">GRID: AUTOSPORT</p>
+<a href="gridauto.html">
+<img src="grid.jpg"id="image4"></a>
+
+<div id="horizontal-line"></div>
+
+<p id="gamename5">DIRT RALLY 2.0</p>
+<a href="dirtrally.html">
+<img src="dirt.jpg"id="image5"></a>
+
+<p id="gamename6">NEED FOR SPEED: HOT PURSUIT</p>
+<a href="needforspeed2.html">
+<img src="needfor.jpg"id="image6"></a>
+
+<p id="gamename7">DIRT 5</p>
+<a href="dirt5.html">
+<img src="dirt5.jpg"id="image7"></a>
+
+<p id="gamename8">DRIVECLUB</p>
+<a href="driveclub.html">
+<img src="driveclub.jpg"id="image8"></a>
+
+<div id="vertical-line"></div>
+<div id="vertical-line2"></div>
+<div id="vertical-line3"></div>
+
+
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>

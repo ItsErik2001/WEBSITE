@@ -1,0 +1,477 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Game Factory</title>
+
+<style>
+*{margin:0;}
+#background-image{
+background-image:url("allgames.jpg");
+background-size:cover;
+width:100%;
+height:100%;
+
+}
+
+#transparent1{
+width:90%;
+height:90%;
+box-shadow:gold 0px 0px 30px 0px;
+background-color:rgba(0,0,0,.3);
+background-blend-mode:overlay;
+margin-left:65px;
+}
+
+#webname{
+color:white;
+font-size:45px;
+letter-spacing:10px;
+position:relative;top:20px;left:20px;
+}
+#webname:hover{
+cursor:pointer;
+background-color:gold;
+color:black;
+box-shadow:black 0px 0px 30px 0px;
+width:400px;
+}
+#homebutton{
+position:relative;top:200px;left:600px;
+border:2px solid gold;
+width:150px;
+height:50px;
+text-align:center;
+line-height:50px;
+box-shadow:white 5px 0px 15px 0px;
+font-size: 25px;
+}
+
+
+#homebutton a{text-decoration:none;color:gold;}
+#homebutton:hover{
+background-color:black;
+cursor:pointer;
+letter-spacing:5px;
+font-weight;bold;
+box-shadow:yellow 5px 0px 50px 0px;
+}
+#homebutton a:hover{color:white}
+
+#gamesbutton ul{
+list-style:none;
+color:gold;
+}
+#gamesbutton ul ul a{
+text-decoration:none;
+color:white;
+}
+#gamesbutton ul ul{display:none;}
+#gamesbutton ul li:hover ul{display:inline;}
+#gamesbutton ul li:hover{line-height:50px;
+color:white;
+width:170px;}
+#gamesbutton ul li a:hover{color:gold;}
+#gamesbutton{
+box-shadow:gold 5px 0px 10px 0px;
+border:1px solid gold;
+width:150px;
+height:50px;
+
+line-height:50px;
+position:relative;top:150px;left:800px;
+font-size: 25px;
+}
+#gamesbutton:hover{
+background-color:black;
+cursor:pointer;
+box-shadow:yellow 5px 0px 30px 0px;
+}
+
+
+#loginbutton{
+position:relative;top:100px;left:1000px;
+border:2px solid gold;
+width:150px;
+height:50px;
+text-align:center;
+line-height:50px;
+box-shadow:white 5px 0px 15px 0px;
+font-size: 25px;
+}
+
+
+#loginbutton a{text-decoration:none;color:gold;}
+#loginbutton:hover{
+background-color:black;
+cursor:pointer;
+letter-spacing:5px;
+font-weight;bold;
+box-shadow:yellow 5px 0px 50px 0px;
+}
+#loginbutton a:hover{color:white}
+
+#text{
+color:white;
+font-size:25px;
+position:relative;top:290px;left:50px;
+}
+
+.background2{
+width:100%;
+height:133%;
+background-color:black;
+background-size:cover;
+}
+
+.box{
+width:1506px;
+height:100px;
+box-shadow:white 5px 0px 10px 0px;
+margin-left:190px;
+border-radius:15px;
+}
+.box:hover{
+background-color:black;
+}
+
+.box-insider{
+width:1100px;
+height:70px;
+box-shadow:black 3px 0px 10px 0px;
+color:red;
+border-radius:15px;
+line-height:30px;
+text-align:center;
+font-size: 22px;
+position:relative;top:15px;left:150px;
+}
+.box-insider:hover{
+background-color:gold;
+cursor:pointer;
+box-shadow:white 5px 0px 30px 0px;
+color:black;
+}
+
+.container{
+width:1100px;
+height:815px;
+box-shadow:white 2px 0px 10px 0px;
+position:relative;top:50px;left:150px;
+background-color:maroon;
+}
+
+.topbar{
+width:1100px;
+height:50px;
+background-color:darkred;
+text-align:center;
+line-height:50px;
+font-size:25;
+color:yellow;
+position:relative;top:0px;left:0px;
+}
+.topbar:hover{
+background-color:gold;
+cursor:pointer;
+color:black;
+letter-spacing:5px;
+}
+
+.shooting-game1{
+color:white;
+margin-top:30px;
+margin-left:775px;
+font-size: 20px;
+}
+.shooting-game1:hover{
+color:gold;
+cursor:pointer;
+}
+.image1{
+width:203px;
+margin-top:20px;
+margin-left:767px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image1:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+.shooting-game2{
+color:white;
+margin-top:-300px;
+margin-left:430px;
+font-size: 20px;
+}
+.shooting-game2:hover{
+color:gold;
+cursor:pointer;
+}
+.image2{
+width:203px;
+height:260px;
+margin-top:20px;
+margin-left:450px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image2:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+.shooting-game3{
+color:white;
+margin-top:-300px;
+margin-left:135px;
+font-size: 20px;
+}
+.shooting-game3:hover{
+color:gold;
+cursor:pointer;
+}
+.image3{
+width:203px;
+height:260px;
+margin-top:20px;
+margin-left:130px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image3:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+.shooting-game4{
+color:white;
+margin-top:50px;
+margin-left:135px;
+font-size: 20px;
+}
+.shooting-game4:hover{
+color:gold;
+cursor:pointer;
+}
+.image4{
+width:203px;
+height:260px;
+margin-top:20px;
+margin-left:130px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image4:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+.shooting-game5{
+color:white;
+margin-top:-300px;
+margin-left:450px;
+font-size: 20px;
+}
+.shooting-game5:hover{
+color:gold;
+cursor:pointer;
+}
+.image5{
+width:203px;
+height:260px;
+margin-top:20px;
+margin-left:450px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image5:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+.shooting-game6{
+color:white;
+margin-top:-300px;
+margin-left:788px;
+font-size: 20px;
+}
+.shooting-game6:hover{
+color:gold;
+cursor:pointer;
+}
+.image6{
+width:203px;
+height:260px;
+margin-top:20px;
+margin-left:767px;
+box-shadow:azure 1px 0px 15px 1px;
+}
+
+.image6:hover{
+transform:translateY(18px);
+transition:transform 1s;
+box-shadow:white 3px 0px 10px 0px;
+cursor:pointer;
+}
+
+
+
+
+.horizontal-line{
+width:1100px;
+height:1px;
+background-color:red;
+margin-top:-330px;
+}
+
+.vertical-line{
+width:765px;
+height:1px;
+background-color:orange;
+transform:rotate(90deg);
+margin-left:335px;
+margin-top:20px;
+}
+
+.vertical-line2{
+width:765px;
+height:1px;
+background-color:orange;
+transform:rotate(90deg);
+margin-left:0px;
+margin-top:0px;
+}
+
+.box2{
+width:1100px;
+height:330px;
+background-color:lavenderblush;
+position:relative;top:330px;
+}
+
+.ps5txt{
+color:black;
+position:relative;top:20px;left:0px;
+line-height:25px;
+font-size: 20px;
+text-align:center;
+}
+
+.picture{
+width:410px;
+box-shadow:black 5px 0px 10px 0px;
+position:relative;top:35px;left:350px;
+}
+
+.endbar{
+width:1100px;
+height:30px;
+background-color:gold;
+position:relative;top:330px;
+text-align:center;
+color:black;
+font-weight:bold;
+line-height:30px;
+letter-spacing:10px;
+font-size: 25px;
+}
+
+
+.endbar:hover{
+background-color:red;
+color:black;
+cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="background-image">
+<div id="transparent1">
+<div id="webname">Game Factory</div> 
+<div id="homebutton"><a href="#">Home</a></div>
+
+
+<div id="gamesbutton">
+<ul>
+<li>Games<ul>
+<li><a href="sports.html">Football Games</a></li>
+<li><a href="#">Shooting Games</a></li>
+<li><a href="racing.html">Racing Games</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="loginbutton"><a href="login.html">Login</a></div>
+<p id="text">
+Welcome to my website called <font color="gold">Game Factory</font>, 
+this website is developed to show you a big category of games such as shooting, racing and football games.
+</p>
+</div>
+
+<div class="background2">
+<div class="box">
+<div class="box-insider">In Game Factory you can find the latest games released in the market of gaming,
+one of them is Call of duty Vanguard released on the 5 November 2021 
+and one of football category is Fifa 22 released on 1 October 2021</div>
+<div class="container">
+<div class="topbar">SHOOTING-GAMES</div>
+
+<p class="shooting-game1">Call of Duty: Vanguard</p>
+<a href="vanguard.html">
+<img src="vanguard.jpg" class="image1"></img></a>
+
+<p class="shooting-game2">Call of Duty: Modern Warfare</p>
+<a href="modernwar.html">
+<img src="modernw.jpg" class="image2"></img></a>
+
+<p class="shooting-game3">Call of Duty: Cold War</p>
+<a href="coldwar.html">
+<img src="coldw.jpg" class="image3"></img></a>
+
+<p class="shooting-game4">Call of Duty: Black ops 4</p>
+<img src="blackops4.jpg" class="image4"></img>
+
+<p class="shooting-game5">Call of Duty: Black ops 3</p>
+<img src="blackops3.jpg" class="image5"></img>
+
+<p class="shooting-game6">Call of Duty: Ghosts</p>
+<a href="ghosts.html">
+<img src="ghosts.jpg" class="image6"></img></a>
+
+
+
+<div class="horizontal-line"></div>
+
+<div class="vertical-line"></div>
+<div class="vertical-line2"></div>
+
+<div class="box2">
+<p class="ps5txt">The latest model of playstation is the new PS5 which has improved its graphic 
+features and everyone can play in 4K at 120fps, making the gameplay smoother and even more realistic</p>
+<img src="ps5.png"class="picture"></img>
+</div>
+
+<div class="endbar">Game Factory</div>
+
+</div>
+</div>
+
+
+
+</body>
+</html>
